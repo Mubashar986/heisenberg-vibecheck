@@ -1,0 +1,88 @@
+{
+  "version": "1.0.0",
+  "skills": {
+    "roadmap-wbs-planner": {
+      "source": ".agents/skills/core/roadmap-wbs-planner/SKILL.md",
+      "task_types": ["greenfield", "brownfield-onboarding", "roadmap"],
+      "artifact": "roadmap.md"
+    },
+    "concept-to-code-bridge": {
+      "source": ".agents/skills/core/conceptual-understanding/SKILL.md",
+      "task_types": ["feature", "refactor", "bug", "ui", "algorithm"],
+      "artifact": "understanding.md"
+    },
+    "narrsistic-pluto": {
+      "source": ".agents/skills/core/narrsistic-pluto/SKILL.md",
+      "task_types": ["architecture", "complex-bug", "high-risk-refactor"],
+      "artifact": "architecture-analysis.md"
+    },
+    "codebase-design": {
+      "source": ".agents/skills/core/codebase-design/SKILL.md",
+      "task_types": ["feature", "refactor", "ui", "algorithm"],
+      "artifact": "design.md"
+    },
+    "domain-learning": {
+      "source": ".agents/skills/core/domain-learning/SKILL.md",
+      "task_types": ["algorithm", "concurrency", "persistence", "search", "security-protocol", "networking", "performance", "ai-systems", "state-machine"],
+      "artifact": "domain-concepts.md"
+    },
+    "testing-verification": {
+      "source": ".agents/skills/core/testing-verification/SKILL.md",
+      "task_types": ["feature", "refactor", "bug", "ui", "algorithm", "architecture"],
+      "artifact": "verification.md"
+    },
+    "framework-language-guide": {
+      "source": ".agents/skills/core/framework-language-guide/SKILL.md",
+      "task_types": ["feature", "refactor", "bug", "algorithm", "learning", "framework-guide"],
+      "artifact": "framework-guide.md"
+    },
+    "qa-audit": {
+      "source": ".agents/skills/core/qa-audit/SKILL.md",
+      "task_types": ["lead-audit"],
+      "artifact": "QA_audit.md"
+    },
+    "picasso": {
+      "source": ".agents/skills/the-muses/picasso/SKILL.md",
+      "task_types": ["ui"],
+      "artifact": "design-system.md"
+    },
+    "escher": {
+      "source": ".agents/skills/the-muses/escher/SKILL.md",
+      "task_types": ["ui"],
+      "artifact": "backend-requirements.md"
+    },
+    "vermeer": {
+      "source": ".agents/skills/the-muses/vermeer/SKILL.md",
+      "task_types": ["ui"],
+      "artifact": "ui-verification.md"
+    },
+    "bro": {
+      "source": ".agents/skills/utility/bro/SKILL.md",
+      "task_types": ["utility"],
+      "artifact": "none"
+    },
+    "how": {
+      "source": ".agents/skills/utility/how/SKILL.md",
+      "task_types": ["utility"],
+      "artifact": "none"
+    },
+    "why": {
+      "source": ".agents/skills/utility/why/SKILL.md",
+      "task_types": ["utility"],
+      "artifact": "none"
+    }
+  },
+  "required_skill_sets": {
+    "greenfield": ["roadmap-wbs-planner"],
+    "brownfield-onboarding": ["roadmap-wbs-planner"],
+    "feature": ["concept-to-code-bridge", "codebase-design", "testing-verification"],
+    "refactor": ["concept-to-code-bridge", "codebase-design", "testing-verification"],
+    "bug": ["concept-to-code-bridge", "testing-verification"],
+    "complex-bug": ["narrsistic-pluto", "concept-to-code-bridge", "testing-verification"],
+    "architecture": ["narrsistic-pluto", "codebase-design", "testing-verification"],
+    "high-risk-refactor": ["narrsistic-pluto", "codebase-design", "testing-verification"],
+    "ui": ["concept-to-code-bridge", "codebase-design", "picasso", "escher", "vermeer", "testing-verification"],
+    "algorithm": ["concept-to-code-bridge", "domain-learning", "codebase-design", "testing-verification"],
+    "lead-audit": ["qa-audit"]
+  }
+}

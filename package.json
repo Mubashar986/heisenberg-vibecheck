@@ -1,0 +1,43 @@
+{
+  "name": "heisenberg-vibecheck",
+  "version": "1.0.0",
+  "description": "The 99.1% pure Vibe-Check for AI coding agents. Hard circuit-breaker that blocks unapproved edits and keeps your project clean in .agents/",
+  "main": "bin/index.js",
+  "bin": {
+    "heisenberg-vibecheck": "./bin/index.js",
+    "vibecheck": "./bin/index.js"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "governance",
+    "vibecheck",
+    "heisenberg",
+    "cursor",
+    "claude-code",
+    "antigravity",
+    "copilot",
+    "git-hooks",
+    "linter",
+    "spec-driven-development"
+  ],
+  "author": "Mubashar986",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mubashar986/heisenberg-vibecheck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mubashar986/heisenberg-vibecheck/issues"
+  },
+  "homepage": "https://github.com/Mubashar986/heisenberg-vibecheck#readme",
+  "files": [
+    "bin",
+    "bundle",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

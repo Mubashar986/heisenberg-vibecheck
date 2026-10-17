@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "engine": "heisenberg-vibecheck",
+  "mode": "guarded",
+  "artifact_root": ".agents/artifacts",
+  "task_root": ".agents/tasks",
+  "receipt_root": ".agents/receipts",
+  "gates": {
+    "require_task_manifest_for_product_edits": true,
+    "require_planning_artifact_before_product_edits": true,
+    "block_destructive_git_commands": true,
+    "require_receipt_before_completion": true
+  },
+  "enforcement_levels": {
+    "advisory": "Instructions and validation only.",
+    "guarded": "Native hooks block unapproved local edits.",
+    "enforced": "Git pre-commit and CI validate policy strictly before commit/merge."
+  }
+}
